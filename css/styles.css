@@ -278,10 +278,11 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; margin: 0; 
 /* ---------- Ofertas ---------- */
 .offers .offer-card { position: relative; min-height: 320px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); display: flex; align-items: flex-end; transition: transform .18s ease; }
 .offers .offer-card:hover { transform: translateY(-6px); }
-.o-pink { background: linear-gradient(160deg, #ff7ab0, var(--magic-fuchsia)); }
-.o-cyan { background: linear-gradient(160deg, #4aa8ff, var(--magic-blue)); }
-.o-green { background: linear-gradient(160deg, #6bd6b0, #1f8f7a); }
-.o-orange { background: linear-gradient(160deg, var(--magic-yellow), var(--magic-orange)); }
+.offers .offer-card { background-size: cover; background-position: center; background-repeat: no-repeat; }
+.o-pink { background-image: url("../img/parkPenafiel.jpg"), linear-gradient(160deg, #ff7ab0, var(--magic-fuchsia)); }
+.o-cyan { background-image: url("../img/insuflavel3.jpg"),  linear-gradient(160deg, #4aa8ff, var(--magic-blue)); }
+.o-green { background-image: url("../img/insuflavel1.png"), linear-gradient(160deg, #6bd6b0, #1f8f7a); }
+.o-orange { background-image: url("../img/insuflavel4.jpeg"), linear-gradient(160deg, var(--magic-yellow), var(--magic-orange)); }
 .offer-overlay { position: relative; z-index: 2; padding: 1.4rem; color: #fff; background: linear-gradient(0deg, rgba(26,17,64,.85), transparent); width: 100%; }
 .offer-overlay h3 { font-size: 1.2rem; text-transform: uppercase; margin-bottom: .5rem; }
 .offer-overlay p { font-size: .92rem; color: rgba(255,255,255,.9); margin: 0 0 .8rem; }
