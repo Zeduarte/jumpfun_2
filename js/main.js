@@ -1,4 +1,4 @@
-// BalizasLandia — interações da página
+// JumpFun — interações da página
 
 (function () {
   "use strict";
@@ -13,6 +13,26 @@
   }
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
+
+  // Elementos que rodam ao fazer scroll (bola, bolo)
+  var spinners = Array.prototype.slice.call(document.querySelectorAll("[data-spin]"));
+  var ticking = false;
+  function spin() {
+    var y = window.scrollY || window.pageYOffset;
+    spinners.forEach(function (el) {
+      var speed = parseFloat(el.getAttribute("data-spin")) || 0.3;
+      var axis = el.getAttribute("data-spin-axis") || "z";
+      var ang = y * speed;
+      el.style.transform = axis === "y" ? "rotateY(" + ang + "deg)" : "rotate(" + ang + "deg)";
+    });
+    ticking = false;
+  }
+  if (spinners.length) {
+    window.addEventListener("scroll", function () {
+      if (!ticking) { window.requestAnimationFrame(spin); ticking = true; }
+    }, { passive: true });
+    spin();
+  }
 
   // Menu mobile
   var toggle = document.getElementById("navToggle");
