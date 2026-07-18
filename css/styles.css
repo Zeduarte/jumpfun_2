@@ -231,27 +231,27 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; margin: 0; 
 .party-art { display: grid; place-items: center; perspective: 1100px; min-height: 380px; }
 
 /* Bolo elegante em CSS (roda com o scroll via rotateY) */
-.cake { position: relative; width: 300px; height: 340px; will-change: transform; filter: drop-shadow(0 26px 34px rgba(124,75,224,.28)); }
+.cake { position: relative; width: 300px; height: 300px; will-change: transform; filter: drop-shadow(0 26px 34px rgba(124,75,224,.28)); }
 .cake > span { position: absolute; left: 50%; transform: translateX(-50%); }
 .cake-plate { bottom: 2px; width: 300px; height: 46px; border-radius: 50%;
   background: radial-gradient(ellipse at 50% 34%, #ffffff, #ded7ef 68%, #c8bfe2);
   box-shadow: 0 16px 26px -12px rgba(26,17,64,.32); }
-.cake-tier { border-radius: 16px 16px 22px 22px; box-shadow: inset 0 -14px 22px rgba(0,0,0,.07); }
-.tier-bottom { bottom: 34px; width: 260px; height: 94px; background: linear-gradient(180deg, #ffc9df, #ff9ec6); }
-.tier-middle { bottom: 122px; width: 200px; height: 82px; background: linear-gradient(180deg, #cbdcff, #a9c4ff); }
-.tier-top    { bottom: 196px; width: 140px; height: 70px; background: linear-gradient(180deg, #ffeab6, #ffe08e); }
-/* cobertura clara (topo de cada camada) */
-.cake-tier::before { content: ""; position: absolute; top: -14px; left: 0; width: 100%; height: 30px; border-radius: 50%;
-  background: linear-gradient(180deg, #fff, #fdeef6); box-shadow: 0 4px 7px rgba(0,0,0,.05); }
-/* pingos de cobertura */
-.cake-tier::after { content: ""; position: absolute; top: 8px; left: 9px; right: 9px; height: 16px;
-  background: radial-gradient(circle at 11px -3px, #fff 10px, transparent 11px) repeat-x; background-size: 30px 16px; }
+/* corpo redondo (cilindro) */
+.cake-body { bottom: 40px; width: 236px; height: 132px; border-radius: 118px / 34px;
+  background: linear-gradient(180deg, #ffb0d1, #ff7fb4); box-shadow: inset 0 -18px 28px rgba(0,0,0,.10); }
+/* faixa de cobertura com pingos por cima do bordo */
+.cake-drip { bottom: 150px; width: 236px; height: 30px; border-radius: 118px / 18px; background: #fff; z-index: 2; }
+.cake-drip::after { content: ""; position: absolute; top: 18px; left: 16px; right: 16px; height: 20px;
+  background: radial-gradient(circle at 12px -4px, #fff 12px, transparent 13px) repeat-x; background-size: 34px 20px; }
+/* superfície redonda do topo */
+.cake-top { bottom: 148px; width: 208px; height: 56px; border-radius: 50%; z-index: 3;
+  background: radial-gradient(ellipse at 50% 38%, #ffffff, #ffe1ee 78%); box-shadow: inset 0 3px 6px rgba(0,0,0,.05); }
 /* velas */
-.cake-candle { bottom: 250px; width: 11px; height: 50px; border-radius: 6px; z-index: 4;
+.cake-candle { bottom: 168px; width: 11px; height: 52px; border-radius: 6px; z-index: 4;
   background: repeating-linear-gradient(-45deg, currentColor 0 7px, #fff 7px 14px); box-shadow: 0 2px 4px rgba(0,0,0,.15); }
-.c1 { margin-left: -44px; color: #ff5f9e; }
-.c2 { margin-left: 0;     color: #5f8bff; bottom: 258px; }
-.c3 { margin-left: 44px;  color: #ffb52e; }
+.c1 { margin-left: -46px; color: #ff5f9e; }
+.c2 { margin-left: 0;     color: #5f8bff; bottom: 176px; }
+.c3 { margin-left: 46px;  color: #ffb52e; }
 .cake-candle::after { content: ""; position: absolute; top: -17px; left: 50%; transform: translateX(-50%);
   width: 13px; height: 19px; border-radius: 50% 50% 50% 50% / 62% 62% 38% 38%;
   background: radial-gradient(circle at 50% 66%, #fff6c2, #ffcf33 45%, #ff7a1a);
