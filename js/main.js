@@ -41,6 +41,7 @@
     toggle.addEventListener("click", function () {
       var open = nav.classList.toggle("open");
       toggle.classList.toggle("open", open);
+      toggle.textContent = open ? "✕" : "☰";
       toggle.setAttribute("aria-expanded", String(open));
       toggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
     });
@@ -48,6 +49,7 @@
       link.addEventListener("click", function () {
         nav.classList.remove("open");
         toggle.classList.remove("open");
+        toggle.textContent = "☰";
         toggle.setAttribute("aria-expanded", "false");
       });
     });
