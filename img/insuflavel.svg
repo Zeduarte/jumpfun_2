@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 190" role="img" aria-label="Castelo insuflável">
+  <ellipse cx="110" cy="176" rx="94" ry="10" fill="#000" opacity=".12"/>
+  <!-- base -->
+  <rect x="16" y="122" width="188" height="48" rx="12" fill="#37c6e0"/>
+  <g fill="#fff" opacity=".22">
+    <rect x="32" y="122" width="11" height="48"/>
+    <rect x="72" y="122" width="11" height="48"/>
+    <rect x="137" y="122" width="11" height="48"/>
+    <rect x="177" y="122" width="11" height="48"/>
+  </g>
+  <rect x="16" y="122" width="188" height="10" fill="#1f9cc0" opacity=".5"/>
+  <!-- muro central ondulado -->
+  <path d="M68 132 V98 q11 -13 22 0 q11 13 22 0 q11 -13 22 0 q11 13 22 0 V132 Z" fill="#ffb52e"/>
+  <!-- arco de entrada -->
+  <path d="M90 132 V113 a20 20 0 0 1 40 0 V132 Z" fill="#7c3aed"/>
+  <path d="M99 132 V115 a11 11 0 0 1 22 0 V132 Z" fill="#241a52"/>
+  <!-- torre esquerda -->
+  <rect x="22" y="58" width="48" height="72" rx="9" fill="#ff5f9e"/>
+  <rect x="22" y="58" width="48" height="14" rx="9" fill="#fff" opacity=".18"/>
+  <polygon points="16,60 76,60 46,28" fill="#ffd23f"/>
+  <line x1="46" y1="28" x2="46" y2="12" stroke="#5f8bff" stroke-width="3"/>
+  <polygon points="46,12 64,17 46,22" fill="#5ec269"/>
+  <!-- torre direita -->
+  <rect x="150" y="58" width="48" height="72" rx="9" fill="#5f8bff"/>
+  <rect x="150" y="58" width="48" height="14" rx="9" fill="#fff" opacity=".18"/>
+  <polygon points="144,60 204,60 174,28" fill="#ffd23f"/>
+  <line x1="174" y1="28" x2="174" y2="12" stroke="#ff5f9e" stroke-width="3"/>
+  <polygon points="174,12 192,17 174,22" fill="#ff8a3d"/>
+  <!-- janelinhas -->
+  <circle cx="46" cy="92" r="8" fill="#fff" opacity=".85"/>
+  <circle cx="174" cy="92" r="8" fill="#fff" opacity=".85"/>
+</svg>

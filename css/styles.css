@@ -154,6 +154,9 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; margin: 0; 
 .b-teal   { color:#25b5cf; background: radial-gradient(circle at 34% 28%, #92e6f4, #25b5cf 62%); top: 34%; right: 9%; width:120px; height:150px; animation-delay:1.2s; }
 .b-green  { color:#3fae5a; background: radial-gradient(circle at 34% 28%, #a5eeb5, #3fae5a 62%); top: 60%; right: 15%; width:104px; height:130px; animation-delay:2s; }
 @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-16px); } }
+.hero-inflatable { position: absolute; z-index: 2; bottom: 74px; left: 3%; width: clamp(130px, 15vw, 210px);
+  filter: drop-shadow(0 16px 22px rgba(0,0,0,.35)); animation: floaty 6.5s ease-in-out infinite; }
+@media (max-width: 720px) { .hero-inflatable { display: none; } }
 
 /* ---------- Ondas ---------- */
 .wave { position: absolute; left: 0; right: 0; height: clamp(50px, 8vw, 120px); z-index: 4; }
@@ -237,21 +240,21 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; margin: 0; 
   background: radial-gradient(ellipse at 50% 34%, #ffffff, #ded7ef 68%, #c8bfe2);
   box-shadow: 0 16px 26px -12px rgba(26,17,64,.32); }
 /* corpo redondo (cilindro) */
-.cake-body { bottom: 40px; width: 236px; height: 132px; border-radius: 118px / 34px;
+.cake-body { bottom: 42px; width: 252px; height: 116px; border-radius: 28px 28px 130px 130px / 18px 18px 46px 46px;
   background: linear-gradient(180deg, #ffb0d1, #ff7fb4); box-shadow: inset 0 -18px 28px rgba(0,0,0,.10); }
 /* faixa de cobertura com pingos por cima do bordo */
-.cake-drip { bottom: 150px; width: 236px; height: 30px; border-radius: 118px / 18px; background: #fff; z-index: 2; }
-.cake-drip::after { content: ""; position: absolute; top: 18px; left: 16px; right: 16px; height: 20px;
-  background: radial-gradient(circle at 12px -4px, #fff 12px, transparent 13px) repeat-x; background-size: 34px 20px; }
+.cake-drip { bottom: 144px; width: 252px; height: 30px; border-radius: 126px / 18px; background: #fff; z-index: 2; }
+.cake-drip::after { content: ""; position: absolute; top: 17px; left: 20px; right: 20px; height: 22px;
+  background: radial-gradient(circle at 13px -5px, #fff 13px, transparent 14px) repeat-x; background-size: 38px 22px; }
 /* superfície redonda do topo */
-.cake-top { bottom: 148px; width: 208px; height: 56px; border-radius: 50%; z-index: 3;
+.cake-top { bottom: 132px; width: 228px; height: 58px; border-radius: 50%; z-index: 3;
   background: radial-gradient(ellipse at 50% 38%, #ffffff, #ffe1ee 78%); box-shadow: inset 0 3px 6px rgba(0,0,0,.05); }
 /* velas */
-.cake-candle { bottom: 168px; width: 11px; height: 52px; border-radius: 6px; z-index: 4;
+.cake-candle { bottom: 152px; width: 11px; height: 54px; border-radius: 6px; z-index: 4;
   background: repeating-linear-gradient(-45deg, currentColor 0 7px, #fff 7px 14px); box-shadow: 0 2px 4px rgba(0,0,0,.15); }
-.c1 { margin-left: -46px; color: #ff5f9e; }
-.c2 { margin-left: 0;     color: #5f8bff; bottom: 176px; }
-.c3 { margin-left: 46px;  color: #ffb52e; }
+.c1 { margin-left: -50px; color: #ff5f9e; }
+.c2 { margin-left: 0;     color: #5f8bff; bottom: 160px; }
+.c3 { margin-left: 50px;  color: #ffb52e; }
 .cake-candle::after { content: ""; position: absolute; top: -17px; left: 50%; transform: translateX(-50%);
   width: 13px; height: 19px; border-radius: 50% 50% 50% 50% / 62% 62% 38% 38%;
   background: radial-gradient(circle at 50% 66%, #fff6c2, #ffcf33 45%, #ff7a1a);
