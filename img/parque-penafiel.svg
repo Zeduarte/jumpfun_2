@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Parque indoor com castelo insuflável e trampolins">
+  <defs>
+    <linearGradient id="wallN" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf6ff"/><stop offset="1" stop-color="#d3ecff"/>
+    </linearGradient>
+    <linearGradient id="floorN" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4aa8ff"/><stop offset="1" stop-color="#2f7fd0"/>
+    </linearGradient>
+    <linearGradient id="castleO" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffc074"/><stop offset="1" stop-color="#f77a12"/>
+    </linearGradient>
+    <linearGradient id="castleB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7ec6f4"/><stop offset="1" stop-color="#2f7fd0"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" fill="url(#wallN)"/>
+  <g fill="#ffffff" opacity=".8">
+    <polygon points="40,18 210,10 218,58 46,68"/>
+    <polygon points="250,10 420,8 426,54 256,58"/>
+    <polygon points="460,10 610,16 616,60 466,58"/>
+  </g>
+  <!-- chão -->
+  <rect x="0" y="300" width="640" height="120" fill="url(#floorN)"/>
+  <rect x="0" y="300" width="220" height="120" fill="#26b98f" opacity=".85"/>
+  <!-- castelo insuflável -->
+  <rect x="150" y="120" width="60" height="200" rx="30" fill="url(#castleB)"/>
+  <rect x="470" y="110" width="70" height="210" rx="34" fill="url(#castleB)"/>
+  <path d="M210 300 V170 q0 -30 30 -30 h210 q30 0 30 30 V300 Z" fill="url(#castleO)"/>
+  <path d="M228 168 q0 -30 30 -30 h174 q30 0 30 30" fill="none" stroke="url(#castleO)" stroke-width="30" stroke-linecap="round"/>
+  <circle cx="345" cy="230" r="46" fill="#c85e0d"/>
+  <circle cx="345" cy="230" r="46" fill="none" stroke="url(#castleO)" stroke-width="14"/>
+  <!-- escorrega amarelo -->
+  <path d="M255 300 h120 l40 90 h-120 Z" fill="#4aa8ff"/>
+  <path d="M290 300 h50 l34 90 h-50 Z" fill="#ffcf33"/>
+  <!-- triângulos -->
+  <g fill="#2f7fd0">
+    <polygon points="260,175 276,175 268,191"/><polygon points="410,175 426,175 418,191"/>
+    <polygon points="330,150 346,150 338,166"/>
+  </g>
+  <g fill="#f6851a">
+    <polygon points="170,160 186,160 178,176"/><polygon points="170,220 186,220 178,236"/>
+    <polygon points="492,150 508,150 500,166"/><polygon points="492,220 508,220 500,236"/>
+  </g>
+  <!-- balões -->
+  <g>
+    <ellipse cx="90" cy="120" rx="22" ry="26" fill="#ec2b8f"/><line x1="90" y1="146" x2="90" y2="185" stroke="#fff" stroke-width="2"/>
+    <ellipse cx="560" cy="100" rx="20" ry="24" fill="#74c62b"/><line x1="560" y1="124" x2="560" y2="160" stroke="#fff" stroke-width="2"/>
+    <ellipse cx="600" cy="150" rx="18" ry="22" fill="#ffcf33"/><line x1="600" y1="172" x2="600" y2="205" stroke="#fff" stroke-width="2"/>
+  </g>
+  <!-- piscina de bolas -->
+  <path d="M40 320 q0 -18 20 -18 h150 q20 0 20 18 v54 q0 18 -20 18 h-150 q-20 0 -20 -18 Z" fill="#ffd54a"/>
+  <g>
+    <circle cx="72" cy="340" r="12" fill="#ec2b8f"/><circle cx="100" cy="334" r="12" fill="#22b8d6"/>
+    <circle cx="128" cy="342" r="12" fill="#ffcf33"/><circle cx="156" cy="332" r="12" fill="#74c62b"/>
+    <circle cx="184" cy="340" r="12" fill="#ff8a3d"/><circle cx="86" cy="364" r="12" fill="#7c3aed"/>
+    <circle cx="114" cy="368" r="12" fill="#ff5f9e"/><circle cx="142" cy="364" r="12" fill="#3b34d6"/>
+    <circle cx="170" cy="366" r="12" fill="#74c62b"/><circle cx="198" cy="360" r="12" fill="#22b8d6"/>
+  </g>
+</svg>

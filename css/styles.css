@@ -208,8 +208,10 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; margin: 0; 
 .unit-card { background: #fff; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,.05); }
 .unit-photo { position: relative; min-height: 250px; padding: 1.4rem; display: flex; flex-direction: column; justify-content: flex-end; color: #fff; }
 .unit-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 30%, rgba(26,17,64,.8)); }
-.photo-smf { background: linear-gradient(160deg, #ff5aa8, #b23a8a 60%, var(--magic-violet)); }
-.photo-oaz { background: linear-gradient(160deg, #4aa8ff, var(--magic-cyan) 55%, var(--magic-blue)); }
+/* Foto real (img/paredes.jpg) por cima da ilustração SVG; se a foto não existir,
+   a camada fica transparente e mostra-se a ilustração. */
+.photo-smf { background-image: url("../img/paredes.jpg"), url("../img/parque-paredes.svg"); background-size: cover, cover; background-position: center, center; background-repeat: no-repeat, no-repeat; }
+.photo-oaz { background-image: url("../img/penafiel.jpg"), url("../img/parque-penafiel.svg"); background-size: cover, cover; background-position: center, center; background-repeat: no-repeat, no-repeat; }
 .badge { position: absolute; top: 1rem; right: 1rem; z-index: 2; background: rgba(255,255,255,.92); color: var(--magic-night); font-weight: 700; font-size: .72rem; text-transform: uppercase; letter-spacing: .5px; padding: .35rem .9rem; border-radius: 999px; }
 .unit-photo h3 { position: relative; z-index: 2; font-size: 2rem; text-transform: uppercase; }
 .unit-body { padding: 1.8rem; }

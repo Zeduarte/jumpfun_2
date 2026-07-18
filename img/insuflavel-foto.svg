@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768" role="img" aria-label="Castelo insuflável cor de laranja e azul com escorrega">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dff1ff"/>
+      <stop offset="1" stop-color="#eafbe6"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd06a"/>
+      <stop offset="1" stop-color="#5aa838"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd0f6"/>
+      <stop offset="0.5" stop-color="#3f9be0"/>
+      <stop offset="1" stop-color="#2072c0"/>
+    </linearGradient>
+    <linearGradient id="blueTube" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5fb2ec"/>
+      <stop offset="0.5" stop-color="#7ec6f4"/>
+      <stop offset="1" stop-color="#348fd8"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffc074"/>
+      <stop offset="0.5" stop-color="#ff9636"/>
+      <stop offset="1" stop-color="#f77a12"/>
+    </linearGradient>
+    <linearGradient id="orangeTube" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffb45f"/>
+      <stop offset="0.5" stop-color="#ffc981"/>
+      <stop offset="1" stop-color="#f6851a"/>
+    </linearGradient>
+    <linearGradient id="yellow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe27a"/>
+      <stop offset="1" stop-color="#ffbf29"/>
+    </linearGradient>
+    <radialGradient id="hole" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0" stop-color="#c85e0d"/>
+      <stop offset="1" stop-color="#e7801d"/>
+    </radialGradient>
+  </defs>
+
+  <!-- cenário -->
+  <rect x="0" y="0" width="1024" height="768" rx="26" fill="url(#sky)"/>
+  <rect x="0" y="500" width="1024" height="268" fill="url(#grass)"/>
+  <ellipse cx="512" cy="690" rx="470" ry="46" fill="#000" opacity=".12"/>
+
+  <!-- coluna traseira esquerda -->
+  <rect x="150" y="120" width="96" height="470" rx="48" fill="url(#blue)"/>
+  <rect x="168" y="140" width="30" height="300" rx="15" fill="#fff" opacity=".22"/>
+  <!-- coluna traseira direita -->
+  <rect x="700" y="90" width="132" height="500" rx="60" fill="url(#blue)"/>
+  <rect x="724" y="120" width="40" height="320" rx="20" fill="#fff" opacity=".22"/>
+
+  <!-- parede de trás cor de laranja -->
+  <path d="M232 470 V210 q0 -40 40 -40 H700 q40 0 40 40 V470 Z" fill="url(#orange)"/>
+  <path d="M232 210 q0 -40 40 -40 H700 q40 0 40 40 v26 H232 Z" fill="#fff" opacity=".14"/>
+  <!-- moldura superior tubular -->
+  <path d="M240 230 q0 -44 44 -44 H688 q44 0 44 44" fill="none" stroke="url(#orangeTube)" stroke-width="46" stroke-linecap="round"/>
+  <!-- buraco redondo -->
+  <circle cx="486" cy="330" r="92" fill="url(#hole)"/>
+  <circle cx="486" cy="330" r="92" fill="none" stroke="url(#orangeTube)" stroke-width="26"/>
+  <ellipse cx="462" cy="300" rx="34" ry="20" fill="#fff" opacity=".16"/>
+
+  <!-- base / muro frontal -->
+  <path d="M120 470 q0 -20 22 -20 H882 q22 0 22 20 v150 q0 26 -26 26 H146 q-26 0 -26 -26 Z" fill="url(#blue)"/>
+  <!-- mat cor de laranja (canto frontal esquerdo) -->
+  <path d="M120 470 q0 -20 22 -20 H360 v196 H146 q-26 0 -26 -26 Z" fill="url(#orange)"/>
+  <rect x="120" y="470" width="784" height="20" rx="10" fill="#fff" opacity=".18"/>
+
+  <!-- escorrega -->
+  <path d="M300 470 h300 l84 176 h-300 Z" fill="url(#blue)"/>
+  <!-- calhas do escorrega -->
+  <path d="M356 470 h60 l70 176 h-70 Z" fill="url(#orange)"/>
+  <path d="M430 470 h70 l78 176 h-78 Z" fill="url(#yellow)"/>
+  <!-- rebordos tubulares do escorrega -->
+  <path d="M300 470 h300" stroke="url(#blueTube)" stroke-width="34" stroke-linecap="round" fill="none"/>
+  <path d="M300 470 l0 0 84 176" stroke="url(#blueTube)" stroke-width="30" stroke-linecap="round" fill="none"/>
+  <path d="M600 470 l84 176" stroke="url(#blueTube)" stroke-width="30" stroke-linecap="round" fill="none"/>
+
+  <!-- confetti de triângulos -->
+  <g fill="#2f7fd0">
+    <polygon points="300,250 322,250 311,272"/>
+    <polygon points="380,330 402,330 391,352"/>
+    <polygon points="600,270 622,270 611,292"/>
+    <polygon points="640,380 662,380 651,402"/>
+    <polygon points="300,400 322,400 311,422"/>
+  </g>
+  <g fill="#f6851a">
+    <polygon points="188,220 210,220 199,242"/>
+    <polygon points="188,340 210,340 199,362"/>
+    <polygon points="188,460 210,460 199,482"/>
+    <polygon points="752,190 774,190 763,212"/>
+    <polygon points="752,320 774,320 763,342"/>
+    <polygon points="752,450 774,450 763,472"/>
+    <polygon points="200,560 222,560 211,582"/>
+  </g>
+  <g fill="#2f7fd0">
+    <polygon points="470,560 492,560 481,582"/>
+    <polygon points="700,560 722,560 711,582"/>
+    <polygon points="820,540 842,540 831,562"/>
+  </g>
+</svg>

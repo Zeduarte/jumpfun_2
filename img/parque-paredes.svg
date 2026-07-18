@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Parque indoor com insuflável de girafa e piscina de bolas">
+  <defs>
+    <linearGradient id="wallP" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff7e6"/><stop offset="1" stop-color="#ffe9c7"/>
+    </linearGradient>
+    <linearGradient id="floorP" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb347"/><stop offset="1" stop-color="#ff9022"/>
+    </linearGradient>
+    <linearGradient id="giraffe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd66b"/><stop offset="1" stop-color="#f6a83a"/>
+    </linearGradient>
+    <linearGradient id="baseGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd44f"/><stop offset="1" stop-color="#5fae2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" fill="url(#wallP)"/>
+  <!-- claraboias -->
+  <g fill="#ffffff" opacity=".7">
+    <polygon points="40,20 200,10 210,60 46,72"/>
+    <polygon points="240,10 400,6 408,54 248,60"/>
+    <polygon points="440,8 600,14 606,60 448,58"/>
+  </g>
+  <g stroke="#e9d3ad" stroke-width="3" opacity=".6">
+    <line x1="120" y1="14" x2="126" y2="66"/><line x1="320" y1="8" x2="326" y2="56"/><line x1="520" y1="12" x2="526" y2="58"/>
+  </g>
+  <!-- chão -->
+  <rect x="0" y="300" width="640" height="120" fill="url(#floorP)"/>
+  <rect x="0" y="300" width="220" height="120" fill="#7fce4a" opacity=".9"/>
+  <!-- base insuflável verde/amarela -->
+  <rect x="150" y="250" width="360" height="90" rx="20" fill="url(#baseGreen)"/>
+  <rect x="150" y="250" width="360" height="26" rx="13" fill="#ffdf4d"/>
+  <!-- escorrega insuflável -->
+  <path d="M300 120 h150 v150 h-150 Z" fill="#7c3aed" opacity=".85"/>
+  <path d="M300 130 l-90 130 h60 l70 -130 Z" fill="#3b34d6"/>
+  <path d="M300 130 l-52 130 h30 l40 -130 Z" fill="#22b8d6"/>
+  <!-- girafa insuflável -->
+  <g>
+    <rect x="330" y="70" width="46" height="220" rx="23" fill="url(#giraffe)"/>
+    <ellipse cx="353" cy="60" rx="34" ry="30" fill="url(#giraffe)"/>
+    <circle cx="342" cy="52" r="7" fill="#fff"/><circle cx="342" cy="52" r="3.5" fill="#3a2a12"/>
+    <circle cx="366" cy="52" r="7" fill="#fff"/><circle cx="366" cy="52" r="3.5" fill="#3a2a12"/>
+    <rect x="336" y="28" width="7" height="18" rx="3.5" fill="#b47a2a"/><circle cx="339" cy="26" r="6" fill="#b47a2a"/>
+    <rect x="376" y="28" width="7" height="18" rx="3.5" fill="#b47a2a"/><circle cx="379" cy="26" r="6" fill="#b47a2a"/>
+    <g fill="#b06f28">
+      <circle cx="345" cy="110" r="9"/><circle cx="365" cy="140" r="9"/><circle cx="344" cy="170" r="9"/>
+      <circle cx="366" cy="200" r="9"/><circle cx="346" cy="230" r="9"/><circle cx="360" cy="90" r="7"/>
+    </g>
+  </g>
+  <!-- piscina de bolas -->
+  <path d="M430 300 q0 -18 20 -18 h150 q20 0 20 18 v70 q0 18 -20 18 h-150 q-20 0 -20 -18 Z" fill="#ffd54a"/>
+  <path d="M448 304 h154 v66 h-154 Z" fill="#2f7fd0" opacity=".25"/>
+  <g>
+    <circle cx="462" cy="332" r="12" fill="#ec2b8f"/><circle cx="490" cy="326" r="12" fill="#22b8d6"/>
+    <circle cx="518" cy="334" r="12" fill="#ffcf33"/><circle cx="546" cy="324" r="12" fill="#74c62b"/>
+    <circle cx="574" cy="332" r="12" fill="#ff8a3d"/><circle cx="476" cy="356" r="12" fill="#7c3aed"/>
+    <circle cx="504" cy="360" r="12" fill="#ff5f9e"/><circle cx="532" cy="356" r="12" fill="#3b34d6"/>
+    <circle cx="560" cy="358" r="12" fill="#74c62b"/><circle cx="588" cy="352" r="12" fill="#22b8d6"/>
+  </g>
+</svg>
