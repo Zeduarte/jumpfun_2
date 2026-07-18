@@ -210,8 +210,8 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; margin: 0; 
 .unit-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 30%, rgba(26,17,64,.8)); }
 /* Foto real (img/paredes.jpg) por cima da ilustração SVG; se a foto não existir,
    a camada fica transparente e mostra-se a ilustração. */
-.photo-smf { background-image: url("../img/paredes.jpg"), url("../img/parque-paredes.svg"); background-size: cover, cover; background-position: center, center; background-repeat: no-repeat, no-repeat; }
-.photo-oaz { background-image: url("../img/penafiel.jpg"), url("../img/parque-penafiel.svg"); background-size: cover, cover; background-position: center, center; background-repeat: no-repeat, no-repeat; }
+.photo-smf { background-image: url("../img/parkParedes.jpg"), url("../img/parque-paredes.svg"); background-size: cover, cover; background-position: center, center; background-repeat: no-repeat, no-repeat; }
+.photo-oaz { background-image: url("../img/parkPenafiel.jpg"), url("../img/parque-penafiel.svg"); background-size: cover, cover; background-position: center, center; background-repeat: no-repeat, no-repeat; }
 .badge { position: absolute; top: 1rem; right: 1rem; z-index: 2; background: rgba(255,255,255,.92); color: var(--magic-night); font-weight: 700; font-size: .72rem; text-transform: uppercase; letter-spacing: .5px; padding: .35rem .9rem; border-radius: 999px; }
 .unit-photo h3 { position: relative; z-index: 2; font-size: 2rem; text-transform: uppercase; }
 .unit-body { padding: 1.8rem; }
@@ -293,15 +293,17 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; margin: 0; 
   mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); }
 .gallery-row { display: flex; gap: 1.2rem; width: max-content; animation: marquee 40s linear infinite; }
 .gallery-row.reverse { animation-direction: reverse; }
-.gtile { flex: 0 0 auto; width: 300px; height: 210px; border-radius: 18px; border: 1px solid rgba(255,255,255,.1); }
-.g1 { background: linear-gradient(135deg,#ff5aa8,#b23a8a); }
-.g2 { background: linear-gradient(135deg,#4aa8ff,#3b34d6); }
-.g3 { background: linear-gradient(135deg,#ffd24d,#ff8a3d); }
-.g4 { background: linear-gradient(135deg,#6bd6b0,#1f8f7a); }
-.g5 { background: linear-gradient(135deg,#c084fc,#7c3aed); }
-.g6 { background: linear-gradient(135deg,#37c6e0,#22b8d6); }
-.g7 { background: linear-gradient(135deg,#ff9ecb,#ec2b8f); }
-.g8 { background: linear-gradient(135deg,#ffc48a,#f28a33); }
+.gtile { flex: 0 0 auto; width: 300px; height: 210px; border-radius: 18px; border: 1px solid rgba(255,255,255,.1);
+  background-size: cover; background-position: center; background-repeat: no-repeat; }
+/* Fotos reais (img/insuflavel*.*) por cima do gradiente; se faltarem, mostra o gradiente. */
+.g1 { background-image: url("../img/insuflavel1.png"),  linear-gradient(135deg,#ff5aa8,#b23a8a); }
+.g2 { background-image: url("../img/insuflavel2.webp"), linear-gradient(135deg,#4aa8ff,#3b34d6); }
+.g3 { background-image: url("../img/insuflavel3.jpg"),  linear-gradient(135deg,#ffd24d,#ff8a3d); }
+.g4 { background-image: url("../img/insuflavel4.jpeg"), linear-gradient(135deg,#6bd6b0,#1f8f7a); }
+.g5 { background-image: url("../img/insuflavel5.jpeg"), linear-gradient(135deg,#c084fc,#7c3aed); }
+.g6 { background-image: url("../img/parkParedes.jpg"),  linear-gradient(135deg,#37c6e0,#22b8d6); }
+.g7 { background-image: url("../img/parkPenafiel.jpg"), linear-gradient(135deg,#ff9ecb,#ec2b8f); }
+.g8 { background-image: url("../img/insuflavel-foto.svg"), linear-gradient(135deg,#ffc48a,#f28a33); }
 
 /* ---------- Porquê ---------- */
 .why .why-card { display: flex; gap: 1rem; background: #fff; border: 1px solid rgba(0,0,0,.05); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow-sm); transition: transform .2s ease; }
