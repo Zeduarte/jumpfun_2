@@ -30,8 +30,8 @@
   <rect x="150" y="250" width="360" height="90" rx="20" fill="url(#baseGreen)"/>
   <rect x="150" y="250" width="360" height="26" rx="13" fill="#ffdf4d"/>
   <!-- escorrega insuflável -->
-  <path d="M300 120 h150 v150 h-150 Z" fill="#7c3aed" opacity=".85"/>
-  <path d="M300 130 l-90 130 h60 l70 -130 Z" fill="#3b34d6"/>
+  <path d="M300 120 h150 v150 h-150 Z" fill="#2f74e0" opacity=".85"/>
+  <path d="M300 130 l-90 130 h60 l70 -130 Z" fill="#2f6fed"/>
   <path d="M300 130 l-52 130 h30 l40 -130 Z" fill="#22b8d6"/>
   <!-- girafa insuflável -->
   <g>
@@ -52,8 +52,8 @@
   <g>
     <circle cx="462" cy="332" r="12" fill="#ec2b8f"/><circle cx="490" cy="326" r="12" fill="#22b8d6"/>
     <circle cx="518" cy="334" r="12" fill="#ffcf33"/><circle cx="546" cy="324" r="12" fill="#74c62b"/>
-    <circle cx="574" cy="332" r="12" fill="#ff8a3d"/><circle cx="476" cy="356" r="12" fill="#7c3aed"/>
-    <circle cx="504" cy="360" r="12" fill="#ff5f9e"/><circle cx="532" cy="356" r="12" fill="#3b34d6"/>
+    <circle cx="574" cy="332" r="12" fill="#ff8a3d"/><circle cx="476" cy="356" r="12" fill="#2f74e0"/>
+    <circle cx="504" cy="360" r="12" fill="#ff5f9e"/><circle cx="532" cy="356" r="12" fill="#2f6fed"/>
     <circle cx="560" cy="358" r="12" fill="#74c62b"/><circle cx="588" cy="352" r="12" fill="#22b8d6"/>
   </g>
 </svg>

@@ -52,8 +52,8 @@
   <g>
     <circle cx="72" cy="340" r="12" fill="#ec2b8f"/><circle cx="100" cy="334" r="12" fill="#22b8d6"/>
     <circle cx="128" cy="342" r="12" fill="#ffcf33"/><circle cx="156" cy="332" r="12" fill="#74c62b"/>
-    <circle cx="184" cy="340" r="12" fill="#ff8a3d"/><circle cx="86" cy="364" r="12" fill="#7c3aed"/>
-    <circle cx="114" cy="368" r="12" fill="#ff5f9e"/><circle cx="142" cy="364" r="12" fill="#3b34d6"/>
+    <circle cx="184" cy="340" r="12" fill="#ff8a3d"/><circle cx="86" cy="364" r="12" fill="#2f74e0"/>
+    <circle cx="114" cy="368" r="12" fill="#ff5f9e"/><circle cx="142" cy="364" r="12" fill="#2f6fed"/>
     <circle cx="170" cy="366" r="12" fill="#74c62b"/><circle cx="198" cy="360" r="12" fill="#22b8d6"/>
   </g>
 </svg>

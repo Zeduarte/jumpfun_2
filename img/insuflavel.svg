@@ -12,8 +12,8 @@
   <!-- muro central ondulado -->
   <path d="M68 132 V98 q11 -13 22 0 q11 13 22 0 q11 -13 22 0 q11 13 22 0 V132 Z" fill="#ffb52e"/>
   <!-- arco de entrada -->
-  <path d="M90 132 V113 a20 20 0 0 1 40 0 V132 Z" fill="#7c3aed"/>
-  <path d="M99 132 V115 a11 11 0 0 1 22 0 V132 Z" fill="#241a52"/>
+  <path d="M90 132 V113 a20 20 0 0 1 40 0 V132 Z" fill="#2f74e0"/>
+  <path d="M99 132 V115 a11 11 0 0 1 22 0 V132 Z" fill="#16233f"/>
   <!-- torre esquerda -->
   <rect x="22" y="58" width="48" height="72" rx="9" fill="#ff5f9e"/>
   <rect x="22" y="58" width="48" height="14" rx="9" fill="#fff" opacity=".18"/>
