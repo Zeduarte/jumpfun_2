@@ -171,10 +171,10 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; margin: 0; 
 .section { padding: clamp(3.5rem, 8vw, 6rem) 0; position: relative; }
 .section-white { background: #fff; }
 .section-blush { background: linear-gradient(180deg, #eef8ff, #cfe8ff); }
-.section-blush-2 { background: linear-gradient(180deg, #fff8dc, #ffedaa); padding-bottom: clamp(6rem, 12vw, 10rem); }
+.section-blush-2 { background: linear-gradient(180deg, #eef8ff, #cfe8ff); padding-bottom: clamp(6rem, 12vw, 10rem); }
 .section-sky { background: linear-gradient(180deg, #fff, #dcefff); }
 .section-night { background: var(--magic-night); color: #fff; padding-block: clamp(4rem, 9vw, 7rem) clamp(6rem, 12vw, 10rem); }
-.section-cta { background: linear-gradient(180deg, var(--magic-purple), var(--magic-fuchsia) 55%, var(--magic-pink)); color: #fff; padding-bottom: clamp(6rem, 12vw, 10rem); text-align: center; }
+.section-cta { background: linear-gradient(160deg, #2ac9ea 0%, #2f6fed 52%, #1b4fc4 100%); color: #fff; padding-bottom: clamp(6rem, 12vw, 10rem); text-align: center; }
 
 .section-head { text-align: center; max-width: 680px; margin: 0 auto 3rem; position: relative; z-index: 1; }
 .section-head h2 { font-size: clamp(1.9rem, 4.6vw, 3rem); text-transform: uppercase; color: var(--magic-night); }
