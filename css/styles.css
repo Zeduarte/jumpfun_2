@@ -170,7 +170,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; margin: 0; 
 /* ---------- Secções ---------- */
 .section { padding: clamp(3.5rem, 8vw, 6rem) 0; position: relative; }
 .section-white { background: #fff; }
-.section-blush { background: linear-gradient(180deg, #fffbea, #ffeeb0); }
+.section-blush { background: linear-gradient(180deg, #eef8ff, #cfe8ff); }
 .section-blush-2 { background: linear-gradient(180deg, #fff8dc, #ffedaa); padding-bottom: clamp(6rem, 12vw, 10rem); }
 .section-sky { background: linear-gradient(180deg, #fff, #dcefff); }
 .section-night { background: var(--magic-night); color: #fff; padding-block: clamp(4rem, 9vw, 7rem) clamp(6rem, 12vw, 10rem); }
