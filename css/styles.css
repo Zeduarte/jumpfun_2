@@ -159,13 +159,19 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; margin: 0; 
   filter: drop-shadow(0 16px 22px rgba(0,0,0,.35)); animation: floaty 6.5s ease-in-out infinite; }
 @media (max-width: 720px) { .hero-inflatable { display: none; } }
 
-/* ---------- Ondas ---------- */
-.wave { position: absolute; left: 0; right: 0; height: clamp(50px, 8vw, 120px); z-index: 4; }
-.wave-white { bottom: -1px; background: #fff; -webkit-mask: radial-gradient(70px 100px at 50% 0, transparent 98%, #000) repeat-x; mask: radial-gradient(70px 100px at 50% 0, transparent 98%, #000) repeat-x; -webkit-mask-size: 150px 100%; mask-size: 150px 100%; }
-.wave-night { bottom: -1px; background: var(--magic-night); -webkit-mask: radial-gradient(70px 100px at 50% 0, transparent 98%, #000) repeat-x; mask: radial-gradient(70px 100px at 50% 0, transparent 98%, #000) repeat-x; -webkit-mask-size: 150px 100%; mask-size: 150px 100%; }
-.wave-purple { bottom: -1px; background: var(--magic-purple); -webkit-mask: radial-gradient(70px 100px at 50% 0, transparent 98%, #000) repeat-x; mask: radial-gradient(70px 100px at 50% 0, transparent 98%, #000) repeat-x; -webkit-mask-size: 150px 100%; mask-size: 150px 100%; }
+/* ---------- Ondas (curva suave) ---------- */
+.wave { position: absolute; left: 0; right: 0; height: clamp(46px, 7vw, 96px); z-index: 4;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath d='M0,66 C360,4 780,4 1080,52 C1230,76 1350,84 1440,66 L1440,120 L0,120 Z' fill='%23000'/%3E%3C/svg%3E") no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath d='M0,66 C360,4 780,4 1080,52 C1230,76 1350,84 1440,66 L1440,120 L0,120 Z' fill='%23000'/%3E%3C/svg%3E") no-repeat;
+  -webkit-mask-size: 100% 100%; mask-size: 100% 100%; }
+.wave-white { bottom: -1px; background: #fff; }
+.wave-night { bottom: -1px; background: var(--magic-night); }
+.wave-purple { bottom: -1px; background: var(--magic-purple); }
 .has-wave-night, .has-wave-white, .has-wave-purple { position: relative; }
-.has-wave-top-white::before { content: ""; position: absolute; top: -1px; left: 0; right: 0; height: clamp(50px,8vw,120px); background: #fff; -webkit-mask: radial-gradient(70px 100px at 50% 100%, transparent 98%, #000) repeat-x; mask: radial-gradient(70px 100px at 50% 100%, transparent 98%, #000) repeat-x; -webkit-mask-size: 150px 100%; mask-size: 150px 100%; z-index: 4; }
+.has-wave-top-white::before { content: ""; position: absolute; top: -1px; left: 0; right: 0; height: clamp(46px,7vw,96px); background: #fff; z-index: 4;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath d='M0,54 C360,116 780,116 1080,68 C1230,44 1350,36 1440,54 L1440,0 L0,0 Z' fill='%23000'/%3E%3C/svg%3E") no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath d='M0,54 C360,116 780,116 1080,68 C1230,44 1350,36 1440,54 L1440,0 L0,0 Z' fill='%23000'/%3E%3C/svg%3E") no-repeat;
+  -webkit-mask-size: 100% 100%; mask-size: 100% 100%; }
 
 /* ---------- Secções ---------- */
 .section { padding: clamp(3.5rem, 8vw, 6rem) 0; position: relative; }
